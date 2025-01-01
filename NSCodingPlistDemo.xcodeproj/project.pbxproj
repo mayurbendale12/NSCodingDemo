@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		773450CA2C887A6400A79848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773450C92C887A6400A79848 /* AppDelegate.swift */; };
 		773450CC2C887A6400A79848 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773450CB2C887A6400A79848 /* SceneDelegate.swift */; };
-		773450CE2C887A6400A79848 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773450CD2C887A6400A79848 /* ViewController.swift */; };
+		773450CE2C887A6400A79848 /* NSCodingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773450CD2C887A6400A79848 /* NSCodingViewController.swift */; };
 		773450D12C887A6400A79848 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 773450D02C887A6400A79848 /* Base */; };
 		773450D32C887A6500A79848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773450D22C887A6500A79848 /* Assets.xcassets */; };
 		773450D62C887A6500A79848 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 773450D52C887A6500A79848 /* Base */; };
 		773450E02C88840A00A79848 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773450DF2C88840A00A79848 /* Person.swift */; };
+		77FBFF502D259E1C00465069 /* PlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FBFF4F2D259E1C00465069 /* PlistViewController.swift */; };
+		77FBFF522D259E3E00465069 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FBFF512D259E3900465069 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		773450C62C887A6400A79848 /* NSCodingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCodingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		773450C62C887A6400A79848 /* NSCodingPlistDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSCodingPlistDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		773450C92C887A6400A79848 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		773450CB2C887A6400A79848 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		773450CD2C887A6400A79848 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		773450CD2C887A6400A79848 /* NSCodingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCodingViewController.swift; sourceTree = "<group>"; };
 		773450D02C887A6400A79848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		773450D22C887A6500A79848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		773450D52C887A6500A79848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		773450D72C887A6500A79848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773450DF2C88840A00A79848 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		77FBFF4F2D259E1C00465069 /* PlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistViewController.swift; sourceTree = "<group>"; };
+		77FBFF512D259E3900465069 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +46,7 @@
 		773450BD2C887A6400A79848 = {
 			isa = PBXGroup;
 			children = (
-				773450C82C887A6400A79848 /* NSCodingDemo */,
+				773450C82C887A6400A79848 /* NSCodingPlistDemo */,
 				773450C72C887A6400A79848 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +54,50 @@
 		773450C72C887A6400A79848 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				773450C62C887A6400A79848 /* NSCodingDemo.app */,
+				773450C62C887A6400A79848 /* NSCodingPlistDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		773450C82C887A6400A79848 /* NSCodingDemo */ = {
+		773450C82C887A6400A79848 /* NSCodingPlistDemo */ = {
 			isa = PBXGroup;
 			children = (
+				77FBFF512D259E3900465069 /* ViewController.swift */,
+				77FBFF4E2D259DE300465069 /* Plist */,
+				77FBFF4D2D259DD200465069 /* NSCoding */,
 				773450C92C887A6400A79848 /* AppDelegate.swift */,
 				773450CB2C887A6400A79848 /* SceneDelegate.swift */,
-				773450CD2C887A6400A79848 /* ViewController.swift */,
 				773450CF2C887A6400A79848 /* Main.storyboard */,
 				773450D22C887A6500A79848 /* Assets.xcassets */,
 				773450D42C887A6500A79848 /* LaunchScreen.storyboard */,
 				773450D72C887A6500A79848 /* Info.plist */,
+			);
+			path = NSCodingPlistDemo;
+			sourceTree = "<group>";
+		};
+		77FBFF4D2D259DD200465069 /* NSCoding */ = {
+			isa = PBXGroup;
+			children = (
+				773450CD2C887A6400A79848 /* NSCodingViewController.swift */,
 				773450DF2C88840A00A79848 /* Person.swift */,
 			);
-			path = NSCodingDemo;
+			path = NSCoding;
+			sourceTree = "<group>";
+		};
+		77FBFF4E2D259DE300465069 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				77FBFF4F2D259E1C00465069 /* PlistViewController.swift */,
+			);
+			path = Plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		773450C52C887A6400A79848 /* NSCodingDemo */ = {
+		773450C52C887A6400A79848 /* NSCodingPlistDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 773450DA2C887A6500A79848 /* Build configuration list for PBXNativeTarget "NSCodingDemo" */;
+			buildConfigurationList = 773450DA2C887A6500A79848 /* Build configuration list for PBXNativeTarget "NSCodingPlistDemo" */;
 			buildPhases = (
 				773450C22C887A6400A79848 /* Sources */,
 				773450C32C887A6400A79848 /* Frameworks */,
@@ -85,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = NSCodingDemo;
+			name = NSCodingPlistDemo;
 			productName = NSCodingDemo;
-			productReference = 773450C62C887A6400A79848 /* NSCodingDemo.app */;
+			productReference = 773450C62C887A6400A79848 /* NSCodingPlistDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 773450C12C887A6400A79848 /* Build configuration list for PBXProject "NSCodingDemo" */;
+			buildConfigurationList = 773450C12C887A6400A79848 /* Build configuration list for PBXProject "NSCodingPlistDemo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				773450C52C887A6400A79848 /* NSCodingDemo */,
+				773450C52C887A6400A79848 /* NSCodingPlistDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -141,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773450CE2C887A6400A79848 /* ViewController.swift in Sources */,
+				77FBFF522D259E3E00465069 /* ViewController.swift in Sources */,
+				77FBFF502D259E1C00465069 /* PlistViewController.swift in Sources */,
+				773450CE2C887A6400A79848 /* NSCodingViewController.swift in Sources */,
 				773450CA2C887A6400A79848 /* AppDelegate.swift in Sources */,
 				773450E02C88840A00A79848 /* Person.swift in Sources */,
 				773450CC2C887A6400A79848 /* SceneDelegate.swift in Sources */,
@@ -298,7 +322,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EZGE44PFN4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NSCodingDemo/Info.plist;
+				INFOPLIST_FILE = NSCodingPlistDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,7 +350,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EZGE44PFN4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NSCodingDemo/Info.plist;
+				INFOPLIST_FILE = NSCodingPlistDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -348,7 +372,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		773450C12C887A6400A79848 /* Build configuration list for PBXProject "NSCodingDemo" */ = {
+		773450C12C887A6400A79848 /* Build configuration list for PBXProject "NSCodingPlistDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				773450D82C887A6500A79848 /* Debug */,
@@ -357,7 +381,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		773450DA2C887A6500A79848 /* Build configuration list for PBXNativeTarget "NSCodingDemo" */ = {
+		773450DA2C887A6500A79848 /* Build configuration list for PBXNativeTarget "NSCodingPlistDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				773450DB2C887A6500A79848 /* Debug */,

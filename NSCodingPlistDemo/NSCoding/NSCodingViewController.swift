@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class NSCodingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        saveData()
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
 
             do {
                 let data = try Data(contentsOf: filePath)
-                if let savedPerson = try NSKeyedUnarchiver.unarchivedObject(ofClass: Person.self, from: data) {
+                if let savedPerson = try NSKeyedUnarchiver.unarchivedObject(ofClasses: [Person.self, NSString.self], from: data) as? Person {
                     print("Loaded Person: \(savedPerson.name), Age: \(savedPerson.age)")
                 }
             } catch {
@@ -42,5 +42,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
-
